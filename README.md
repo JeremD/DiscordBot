@@ -1,1 +1,2 @@
-# DiscordBot-Ike
+# IkeBot
+Here comes Ike!
