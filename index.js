@@ -2,7 +2,6 @@ const Discord = require('discord.js');
 const client = new Discord.Client();
 
 const token = process.env.BOT_TOKEN;
-//const token = 'MzgyODc1NDgwNDUxMzE3NzYw.DPcEKg.wBEEnIzsJnHS_duaaSDOPTfEwpY';
 var prefix = "ik!";
 var id_bot = "<@382875480451317760>";
 var id_jyder = '361220724142112780';
