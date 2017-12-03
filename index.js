@@ -33,9 +33,10 @@ client.on('message', message => { //*
       message.channel.send('Chocolatine !');
     } else if (msgc.includes('cipher') || msgc.includes('Cipher')) {
       message.channel.send('J"adore ma SR : ETHER !!!');
-    } else {
-      message.channel.send('MDR');
     }
+    // else {
+    //   message.channel.send('MDR');
+    // }
     // switch (!message.author.bot) {
     //   case msgc == 'ping':
     //     message.channel.send('pong');
