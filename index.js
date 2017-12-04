@@ -31,7 +31,9 @@ client.on('message', message => { //*
     } else if (msgc.includes('Pain au chocolat') || msgc.includes('Chocolatine')) {
       message.channel.send('Chocolatine !');
     } else if (msgc.includes('cipher') || msgc.includes('Cipher')) {
-      message.channel.send('J"adore ma SR : ETHER !!!');
+      message.channel.send("J'adore ma SR : ETHER !!!");
+    } else if (msgc.includes('ETHER') || msgc.includes('AETHER')) {
+      message.channel.send("Personne ne m'imite !");
     }
     // else {
     //   message.channel.send('MDR');
