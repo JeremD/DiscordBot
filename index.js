@@ -19,34 +19,30 @@ client.on('message', message => { //*
   var msgc = message.content; //raccourci
 
   //si l'auteur du message n'est pas un bot
-  if (!message.author.bot) {
-    if (msgc == 'ping') { //message contient un ping
+  // if (!message.author.bot) {
+  //   if (msgc == 'ping') { //message contient un ping
+  //     message.channel.send('pong');
+  //   } else if (msgc == 'pong') {
+  //     message.channel.send('MDR');
+  //   } else if (msgc.includes('Ike') || msgc.includes('ike')) {
+  //     message.channel.send('ETHER !');
+  //   } else if (msgc.includes('Jul') || msgc.includes('jul')) {
+  //     message.channel.send("On m'appelle l'ovni !");
+  //   } else if (msgc.includes('Pain au chocolat') || msgc.includes('pain au chocolat') || msgc.includes('Chocolatine') || msgc.includes('chocolatine')) {
+  //     message.channel.send('Chocolatine !');
+  //   } else if (msgc.includes('cipher') || msgc.includes('Cipher')) {
+  //     message.channel.send("J'adore ma SR : ETHER !!!");
+  //   } else if (msgc.includes('ETHER') || msgc.includes('AETHER') || msgc.includes('Ether') || msgc.includes('ether')) {
+  //     message.channel.send("Personne ne m'imite !");
+  //   }
+
+  switch (!message.author.bot) {
+    case msgc == 'ping':
       message.channel.send('pong');
-    } else if (msgc == 'pong') {
-      message.channel.send('MDR');
-    } else if (msgc.includes('Ike') || msgc.includes('ike')) {
-      message.channel.send('ETHER !');
-    } else if (msgc.includes('Jul') || msgc.includes('jul')) {
-      message.channel.send("On m'appelle l'ovni !");
-    } else if (msgc.includes('Pain au chocolat') || msgc.includes('pain au chocolat') || msgc.includes('Chocolatine') || msgc.includes('chocolatine')) {
-      message.channel.send('Chocolatine !');
-    } else if (msgc.includes('cipher') || msgc.includes('Cipher')) {
-      message.channel.send("J'adore ma SR : ETHER !!!");
-    } else if (msgc.includes('ETHER') || msgc.includes('AETHER') || msgc.includes('Ether') || msgc.includes('ether')) {
-      message.channel.send("Personne ne m'imite !");
-    }
-    // else {
-    //   message.channel.send('MDR');
-    // }
-    // switch (!message.author.bot) {
-    //   case msgc == 'ping':
-    //     message.channel.send('pong');
-    //     break;
-    //   case msgc == 'pong':
-    //     message.channel.send('ping');
-    //     break;
-    //   default:
-    //     message.channel.send('MDR');
+      break;
+    case msgc == 'pong':
+      message.channel.send('ping');
+      break;
   }
 
   //si mention après le spréfix
