@@ -22,8 +22,8 @@ client.on('message', message => { //*
   if (!message.author.bot) {
     if (msgc == 'ping') { //message contient un ping
       message.channel.send('pong');
-    } else if (msgc == 'MDR') {
-      message.channel.send('ping');
+    } else if (msgc == 'pong') {
+      message.channel.send('MDR');
     } else if (msgc.includes('Ike') || msgc.includes('ike')) {
       message.channel.send('ETHER !');
     } else if (msgc.includes('Jul') || msgc.includes('jul')) {
