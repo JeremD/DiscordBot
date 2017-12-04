@@ -32,7 +32,7 @@ client.on('message', message => { //*
       message.channel.send('Chocolatine !');
     } else if (msgc.includes('cipher') || msgc.includes('Cipher')) {
       message.channel.send("J'adore ma SR : ETHER !!!");
-    } else if (msgc.includes('ETHER') || msgc.includes('AETHER') || msgc.includes('Ether') || msgc.includes('ether') {
+    } else if (msgc.includes('ETHER') || msgc.includes('AETHER') || msgc.includes('Ether') || msgc.includes('ether')) {
       message.channel.send("Personne ne m'imite !");
     }
     // else {
