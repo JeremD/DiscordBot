@@ -53,7 +53,10 @@ client.on('message', message => { //*
     } else if (userp == 'rein') {
       message.channel.send('Respect pour Reinhardt <:rein:368038551482400788> ');
     } else if (userp == 'takumi') {
-      message.channel.send('Takumerde'+emoj_tak);
+      message.channel.send('Takumerde '+emoj_tak);
+    }
+    else if (userp == 'cute') {
+      message.channel.send('(◕‿◕)')
     }
   }
 
