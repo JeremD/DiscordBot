@@ -6,6 +6,7 @@ var prefix = "ik!";
 var id_bot = "<@382875480451317760>";
 var id_jyder = '361220724142112780';
 var emoj_tak = '<:nohrianscum:377090236095791104>';
+var emoj_rein = '<:rein:368038551482400788>';
 var userp;
 
 //Lancement bot
@@ -36,6 +37,8 @@ client.on('message', message => { //*
       message.channel.send("Personne ne m'imite !");
     }
   }
+
+  //Si l'auteur est un bot
   if (message.author.bot) {
     if (msgc.includes("T'AS DIT QUOI LÀ") || msgc.includes("TA GUEULE")) {
       message.channel.send("OMAE WA MOU SHINDEIRU");
@@ -46,7 +49,6 @@ client.on('message', message => { //*
   if (msgc.includes(prefix)) {
     userp = msgc.substr(prefix.length);
 
-
     switch (userp) {
       case 'cc':
         message.channel.send('Coucou');
@@ -54,22 +56,23 @@ client.on('message', message => { //*
       case 'jyder':
         message.channel.send('Moi aussi j\'aime les pâtes ♨');
       default:
+      case 'rein':
+        message.channel.send('Respect pour Reinhardt ' + emoj_rein);
+        break;
+      case 'takumi':
+        message.channel.send('Takumerde ' + emoj_tak);
+        break;
+      case 'cute':
+        message.channel.send('◕‿◕');
+        break;
+      case 'bear':
+        message.channel.send('ʕ ᵔᴥᵔ ʔ');
+        break;
+      default:
+        break;
 
     }
 
-    // if (userp == 'cc') {
-    //   message.channel.send('Coucou');
-    // } else if (userp == 'jyder') {
-    //   message.channel.send('Moi aussi j\'aime les pâtes ♨');
-    // } else if (userp == 'rein') {
-    //   message.channel.send('Respect pour Reinhardt <:rein:368038551482400788> ');
-    // } else if (userp == 'takumi') {
-    //   message.channel.send('Takumerde ' + emoj_tak);
-    // } else if (userp == 'cute') {
-    //   message.channel.send('◕‿◕')
-    // } else if (userp == 'bear') {
-    //   message.channel.send('ʕ ᵔᴥᵔ ʔ')
-    // }
   }
 
 
