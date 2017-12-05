@@ -46,21 +46,30 @@ client.on('message', message => { //*
   if (msgc.includes(prefix)) {
     userp = msgc.substr(prefix.length);
 
-    if (userp == 'cc') {
-      message.channel.send('Coucou');
-    } else if (userp == 'jyder') {
-      message.channel.send('Moi aussi j\'aime les pâtes ♨');
-    } else if (userp == 'rein') {
-      message.channel.send('Respect pour Reinhardt <:rein:368038551482400788> ');
-    } else if (userp == 'takumi') {
-      message.channel.send('Takumerde '+emoj_tak);
+
+    switch (userp) {
+      case 'cc':
+        message.channel.send('Coucou');
+        break;
+      case 'jyder':
+        message.channel.send('Moi aussi j\'aime les pâtes ♨');
+      default:
+
     }
-    else if (userp == 'cute') {
-      message.channel.send('◕‿◕')
-    }
-    else if (userp == 'bear') {
-      message.channel.send('ʕ ᵔᴥᵔ ʔ')
-    }
+
+    // if (userp == 'cc') {
+    //   message.channel.send('Coucou');
+    // } else if (userp == 'jyder') {
+    //   message.channel.send('Moi aussi j\'aime les pâtes ♨');
+    // } else if (userp == 'rein') {
+    //   message.channel.send('Respect pour Reinhardt <:rein:368038551482400788> ');
+    // } else if (userp == 'takumi') {
+    //   message.channel.send('Takumerde ' + emoj_tak);
+    // } else if (userp == 'cute') {
+    //   message.channel.send('◕‿◕')
+    // } else if (userp == 'bear') {
+    //   message.channel.send('ʕ ᵔᴥᵔ ʔ')
+    // }
   }
 
 
