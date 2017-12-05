@@ -55,7 +55,6 @@ client.on('message', message => { //*
         break;
       case 'jyder':
         message.channel.send('Moi aussi j\'aime les pâtes ♨');
-      default:
       case 'rein':
         message.channel.send('Respect pour Reinhardt ' + emoj_rein);
         break;
