@@ -5,7 +5,7 @@ const token = process.env.BOT_TOKEN;
 var prefix = "ik!";
 var id_bot = "<@382875480451317760>";
 var id_jyder = '361220724142112780';
-var emoj = '<:nohrianscum:377090236095791104>';
+var emoj_tak = '<:nohrianscum:377090236095791104>';
 var userp;
 
 //Lancement bot
@@ -53,7 +53,7 @@ client.on('message', message => { //*
     } else if (userp == 'rein') {
       message.channel.send('Respect pour Reinhardt <:rein:368038551482400788> ');
     } else if (userp == 'takumi') {
-      message.channel.send('Takumerde'+' : '+'<:nohrianscum:377090236095791104>');
+      message.channel.send('Takumerde'+emoj_tak);
     }
   }
 
