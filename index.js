@@ -36,7 +36,7 @@ client.on('message', message => { //*
       message.channel.send("Personne ne m'imite !");
     }
   }
-  if (!message.author.bot) {
+  if (message.author.bot) {
     if (msgc.includes("T'AS DIT QUOI LÀ") || msgc.includes("TA GUEULE")) {
       message.channel.send("OMAE WA MOU SHINDEIRU");
     }
