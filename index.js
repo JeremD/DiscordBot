@@ -50,8 +50,8 @@ client.on('message', message => { //*
     userp = msgc.substr(prefix.length);
 
     switch (userp) {
-      case 'cc':
-        message.channel.send('Coucou');
+      case 'oim':
+        message.channel.send('Je ne comprends pas ce que tu dis');
         break;
       case 'jyder':
         message.channel.send('Moi aussi j\'aime les pâtes ♨');
