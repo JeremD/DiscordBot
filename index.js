@@ -65,7 +65,7 @@ client.on('message', message => { //*
         message.channel.send('◕‿◕');
         break;
       case 'bear':
-        message.channel.send('ʕ ᵔᴥᵔ ʔ');
+        message.channel.send('ʕᵔᴥᵔʔ');
         break;
       default:
         break;
