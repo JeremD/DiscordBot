@@ -69,7 +69,7 @@ client.on('message', message => { //*
         message.channel.send('ʕ ᵔᴥᵔ ʔ');
         break;
       case 'fanart':
-        message.channel.send(" ");
+        message.channel.send("   ");
         break;
       default:
         break;
