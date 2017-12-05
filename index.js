@@ -69,7 +69,7 @@ client.on('message', message => { //*
         message.channel.send('ʕ ᵔᴥᵔ ʔ');
         break;
       case 'fanart':
-        message.channel.send("http\://orig04.deviantart.net/4b5a/f/2014/035/d/a/ikefireemblem_by_tsukikamikat-d755xiq.jpg");
+        message.channel.send(" ");
         break;
       default:
         break;
