@@ -58,6 +58,9 @@ client.on('message', message => { //*
     else if (userp == 'cute') {
       message.channel.send('(◕‿◕)')
     }
+    else if (userp == 'bear') {
+      message.channel.send('(ʕ ᵔᴥᵔ ʔ)')
+    }
   }
 
 
