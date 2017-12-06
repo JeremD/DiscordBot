@@ -29,7 +29,7 @@ client.on('message', message => { //*
     }
     // else if (msgc.includes('Ike') || msgc.includes('ike')) {
     //   message.channel.send('ETHER !!!');
-    // } 
+    // }
     else if (msgc.includes('Pain au chocolat') || msgc.includes('pain au chocolat') || msgc.includes('Chocolatine') || msgc.includes('chocolatine')) {
       message.channel.send('Chocolatine !');
     } else if (msgc.includes('cipher') || msgc.includes('Cipher')) {
@@ -77,7 +77,7 @@ client.on('message', message => { //*
         message.channel.send("*NULL*");
         break;
       case 'kick':
-        message.channel.send("");
+        message.channel.send("SyntaxError: missing userid after argument list at createScript (vm.js:80:10)");
         break;
       default:
         break;
