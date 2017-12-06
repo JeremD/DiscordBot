@@ -77,8 +77,7 @@ client.on('message', message => { //*
         message.channel.send("*NULL*");
         break;
       case 'kick':
-        message.channel.send("```SyntaxError: missing userid after argument list at createScript (vm.js:80:10)```" +
-        "```at jeiufhi```");
+        message.channel.send("```SyntaxError: Unexpected identifier at createScript (vm.js:80:10)  at Object.runInThisContext (vm.js:152:10) at Module._compile (module.js:605:28)```");
         break;
       default:
         break;
