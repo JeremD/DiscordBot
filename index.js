@@ -8,6 +8,7 @@ var id_jyder = '361220724142112780';
 var emoj_tak = '<:nohrianscum:377090236095791104>';
 var emoj_rein = '<:rein:368038551482400788>';
 var userp;
+var ether = 'ETHER' || 'AETHER' || 'Ether' || 'ether';
 
 //Lancement bot
 client.on('ready', () => {
@@ -33,7 +34,7 @@ client.on('message', message => { //*
       message.channel.send('Chocolatine !');
     } else if (msgc.includes('cipher') || msgc.includes('Cipher')) {
       message.channel.send("J'adore ma SR : ETHER !!!");
-    } else if (msgc.includes('ETHER') || msgc.includes('AETHER') || msgc.includes('Ether') || msgc.includes('ether')) {
+    } else if (msgc.includes(ether)) {
       message.channel.send("Personne ne m'imite !");
     }
   }
