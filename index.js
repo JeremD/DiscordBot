@@ -36,7 +36,7 @@ client.on('message', message => { //*
       message.channel.send("J'adore ma SR : ETHER !!!");
     } else if (msgc.includes(ether)) {
       message.channel.send("Personne ne m'imite !");
-    } else if (msgc.includes('kick')) {
+    } else if (msgc.includes('ik!kick')) {
       message.channel.send("Désolé, je ne peux pas faire ça.");
     }
   }
