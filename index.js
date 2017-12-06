@@ -36,6 +36,8 @@ client.on('message', message => { //*
       message.channel.send("J'adore ma SR : ETHER !!!");
     } else if (msgc.includes(ether)) {
       message.channel.send("Personne ne m'imite !");
+    } else if (msgc.includes('kick')) {
+      message.channel.send("Désolé, je ne peux pas faire ça.");
     }
   }
 
@@ -43,7 +45,7 @@ client.on('message', message => { //*
   if (message.author.bot) {
     if (msgc.includes("T'AS DIT QUOI LÀ") || msgc.includes("TA GUEULE")) {
       message.channel.send("**OMAE WA MOU SHINDEIRU " + emoj_rein + emoj_rein + emoj_rein + ' !!!**');
-    } else if (msgc.includes(emoj_rein)) {
+    } else if (msgc == emoj_rein) {
       message.channel.send('Je voudrai une emote en mon nom s\'il vous plaît.')
     }
   }
@@ -74,8 +76,8 @@ client.on('message', message => { //*
       case 'fanart':
         message.channel.send("*NULL*");
         break;
-      case 'kick @':
-        message.channel.send("Désolé, je ne peux pas faire ça.");
+      case 'kick':
+        message.channel.send("");
         break;
       default:
         break;
