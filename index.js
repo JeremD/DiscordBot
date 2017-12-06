@@ -43,7 +43,7 @@ client.on('message', message => { //*
 
   //Si l'auteur est un bot
   if (message.author.bot) {
-    if (msgc.includes("T'AS DIT QUOI LÀ")cipher || msgc.includes("TA GUEULE")) {
+    if (msgc.includes("T'AS DIT QUOI LÀ") || msgc.includes("TA GUEULE")) {
       message.channel.send("**OMAE WA MOU SHINDEIRU " + emoj_rein + emoj_rein + emoj_rein + ' !!!**');
     } else if (msgc == emoj_rein) {
       message.channel.send('Je voudrai une emote en mon nom s\'il vous plaît.')
