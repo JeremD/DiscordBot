@@ -32,9 +32,11 @@ client.on('message', message => { //*
     // }
     else if (msgc.includes('Pain au chocolat') || msgc.includes('pain au chocolat') || msgc.includes('Chocolatine') || msgc.includes('chocolatine')) {
       message.channel.send('Chocolatine !');
-    } else if (msgc.includes('cipher') || msgc.includes('Cipher')) {
-      message.channel.send("J'adore ma SR : ETHER !!!");
-    } else if (msgc.includes(ether)) {
+    }
+    // else if (msgc.includes('cipher') || msgc.includes('Cipher')) {
+    //   message.channel.send("J'adore ma SR : ETHER !!!");
+    // }
+    else if (msgc.includes(ether)) {
       message.channel.send("Personne ne m'imite !");
     } else if (msgc.includes('ik!kick') || msgc.includes('ik!ban')) {
       message.channel.send("Désolé, je ne peux pas faire ça.");
