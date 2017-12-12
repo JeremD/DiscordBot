@@ -8,7 +8,7 @@ var id_jyder = '361220724142112780';
 var emoj_tak = '<:nohrianscum:377090236095791104>';
 var emoj_rein = '<:rein:368038551482400788>';
 var userp;
-var ether = 'ETHER' || 'AETHER' || 'Ether' || 'ether';
+var ether = 'ETHER';
 
 //Lancement bot
 client.on('ready', () => {
@@ -20,12 +20,11 @@ client.on('ready', () => {
 client.on('message', message => { //*
   var msgc = message.content; //raccourci
 
+  //***********************************************************************//////
   //si l'auteur du message n'est pas un bot
   if (!message.author.bot) {
     if (msgc == 'ping') { //message contient un ping
       message.channel.send('pong');
-    } else if (msgc.includes('Takumi')) {
-      message.channel.send('Takumerde ' + emoj_tak);
     }
     // else if (msgc.includes('Ike') || msgc.includes('ike')) {
     //   message.channel.send('ETHER !!!');
@@ -43,6 +42,8 @@ client.on('message', message => { //*
     }
   }
 
+
+  //***********************************************************************//////
   //Si l'auteur est un bot
   if (message.author.bot) {
     if (msgc.includes("T'AS DIT QUOI LÀ") || msgc.includes("TA GUEULE")) {
@@ -53,6 +54,8 @@ client.on('message', message => { //*
     // }
   }
 
+
+  //***********************************************************************//////
   //si mention après le spréfix
   if (msgc.includes(prefix)) {
     userp = msgc.substr(prefix.length);
