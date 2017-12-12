@@ -24,8 +24,8 @@ client.on('message', message => { //*
   if (!message.author.bot) {
     if (msgc == 'ping') { //message contient un ping
       message.channel.send('pong');
-    } else if (msgc == 'pong') {
-      message.channel.send('n!serverinfos');
+    } else if (msgc == 'Takumi') {
+      message.channel.send('Takumerde '+ emoj_tak);
     }
     // else if (msgc.includes('Ike') || msgc.includes('ike')) {
     //   message.channel.send('ETHER !!!');
@@ -78,6 +78,9 @@ client.on('message', message => { //*
         break;
       case 'fanart':
         message.channel.send("*NULL*");
+        break;
+      case 'bk':
+        message.channel.send("Le Black Night et moi sommes les meilleurs amis du monde");
         break;
       case 'kick':
         message.channel.send("```SyntaxError: Unexpected identifier at createScript (vm.js:80:10)  at Object.runInThisContext (vm.js:152:10) at Module._compile (module.js:605:28)```");
