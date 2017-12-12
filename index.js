@@ -80,7 +80,7 @@ client.on('message', message => { //*
         message.channel.send("*NULL*");
         break;
       case 'bk':
-        message.channel.send("Le Black Night et moi sommes les meilleurs amis du monde");
+        message.channel.send("Le Black Knight et moi sommes les meilleurs amis du monde");
         break;
       case 'kick':
         message.channel.send("```SyntaxError: Unexpected identifier at createScript (vm.js:80:10)  at Object.runInThisContext (vm.js:152:10) at Module._compile (module.js:605:28)```");
