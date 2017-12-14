@@ -39,7 +39,7 @@ client.on('message', message => { //*
       message.channel.send("Personne ne m'imite !");
     } else if (msgc.includes('ik!kick') || msgc.includes('ik!ban')) {
       message.channel.send("Désolé, je ne peux pas faire ça.");
-    } else if (msgc.includes('Takumi') || msgc.includes('takumi')) {
+    } else if (msgc.includes('Takumi')) {
       message.channel.send("TAAAKKKUUUMMMIII !!! JE t'AAAAIIIIMMMMEEEE " + ':heart_eyes:' + ':heart_eyes:' + ':heart_eyes:');
     }
   }
