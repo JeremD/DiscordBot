@@ -35,13 +35,14 @@ client.on('message', message => { //*
     // else if (msgc.includes('cipher') || msgc.includes('Cipher')) {
     //   message.channel.send("J'adore ma SR : ETHER !!!");
     // }
-    else if (msgc.includes(ether)) {
-      message.channel.send("Personne ne m'imite !");
+    else if (msgc.includes('2018')) {
+      message.channel.send("Bonne année !");
     } else if (msgc.includes('ik!kick') || msgc.includes('ik!ban')) {
       message.channel.send("Désolé, je ne peux pas faire ça.");
-    } else if (msgc.includes('Takumi')) {
-      message.channel.send("TAAAKKKUUUMMMIII !!! JE T'AAAAIIIIMMMMEEEE " + ':heart_eyes:' + ':heart_eyes:' + ':heart_eyes:');
     }
+    //else if (msgc.includes('Takumi')) {
+    //   message.channel.send("TAAAKKKUUUMMMIII !!! JE T'AAAAIIIIMMMMEEEE " + ':heart_eyes:' + ':heart_eyes:' + ':heart_eyes:');
+    // }
   }
 
 
