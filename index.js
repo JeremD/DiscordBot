@@ -8,12 +8,12 @@ var id_jyder = '361220724142112780';
 var emoj_tak = '<:nohrianscum:377090236095791104>';
 var emoj_rein = '<:rein:368038551482400788>';
 var userp;
-var ether = 'ETHER';
+var ether = 'AETHER';
 
 //Lancement bot
 client.on('ready', () => {
   console.log("Bonjour, je suis Ike. Pour vous servir.");
-  client.user.setGame("ETHER!!!");
+  client.user.setGame("AETHER!!!");
 });
 
 //action message
