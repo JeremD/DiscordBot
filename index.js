@@ -45,10 +45,10 @@ client.on('message', message => { //*
     else if (msgc.includes('Takumi') || msgc.includes('takumi') || msgc.includes('Reinhardt') || msgc.includes('reinhardt')) {
       random = Math.floor((Math.random() * 6) + 1);
       if (msgc.includes('Takumi') || msgc.includes('takumi') && random == 6) {
-        message.channel.send("Hoshidian scum !" + emoj_tak);
+        message.channel.send("Hoshidian scum " + emoj_tak + " !");
         message.react(id_takumi); //reaction message
       } else if (msgc.includes('Reinhardt') || msgc.includes('reinhardt') && random == 6) {
-        message.channel.send("Magic is evreything !" + emoj_rein);
+        message.channel.send("Magic is everything " + emoj_rein + " !");
         message.react(id_rein); //reaction message
       }
 
