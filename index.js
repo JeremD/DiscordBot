@@ -13,7 +13,7 @@ var ether = 'AETHER';
 //Lancement bot
 client.on('ready', () => {
   console.log("Bonjour, je suis Ike. Pour vous servir.");
-  client.user.setGame("AETHER!!!");
+  client.user.setGame("Pates of Radiance");
 });
 
 //action message
@@ -62,9 +62,6 @@ client.on('message', message => { //*
     userp = msgc.substr(prefix.length);
 
     switch (userp) {
-      case 'oim':
-        message.channel.send('Je ne comprends pas ce que tu dis');
-        break;
       case 'jyder':
         message.channel.send('Moi aussi j\'aime les pâtes ♨');
         break;
