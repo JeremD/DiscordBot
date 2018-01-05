@@ -6,6 +6,7 @@ var prefix = "ik!";
 var id_bot = "<@382875480451317760>";
 var id_jyder = '361220724142112780';
 var id_takumi = '377090236095791104';
+var id_rein = '368038551482400788';
 var emoj_tak = '<:nohrianscum:377090236095791104>';
 var emoj_rein = '<:rein:368038551482400788>';
 var userp;
@@ -39,11 +40,16 @@ client.on('message', message => { //*
     // }
     else if (msgc.includes('ik!kick') || msgc.includes('ik!ban')) {
       message.channel.send("Désolé, je ne peux pas faire ça.");
-    } else if (msgc.includes('Takumi')) {
+    }
+    //message random
+    else if (msgc.includes('Takumi') || msgc.includes('takumi') || msgc.includes('Reinhardt') || msgc.includes('reinhardt')) {
       random = Math.floor((Math.random() * 6) + 1);
-      if (random == 6) {
-        message.channel.send("Hoshidian scum " + emoj_tak);
+      if (msgc.includes('Takumi') || msgc.includes('takumi') && random == 6) {
+        message.channel.send("Hoshidian scum !" + emoj_tak);
         message.react(id_takumi); //reaction message
+      } else if (msgc.includes('Reinhardt') || msgc.includes('reinhardt') && random == 6) {
+        message.channel.send("Magic is evreything !" + emoj_rein);
+        message.react(id_rein); //reaction message
       }
 
     }
