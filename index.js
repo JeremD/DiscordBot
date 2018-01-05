@@ -9,7 +9,7 @@ var emoj_tak = '<:nohrianscum:377090236095791104>';
 var emoj_rein = '<:rein:368038551482400788>';
 var userp;
 var ether = 'AETHER!!!';
-var random = Math.floor((Math.random() * 5) + 1);
+var random = Math.floor((Math.random() * 2) + 1);
 
 //Lancement bot
 client.on('ready', () => {
