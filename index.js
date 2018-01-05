@@ -40,7 +40,7 @@ client.on('message', message => { //*
       message.channel.send("Désolé, je ne peux pas faire ça.");
     }
     random = Math.floor((Math.random() * 6) + 1);
-    else if (msgc.includes('Takumi' && random == 6)) {
+    if (msgc.includes('Takumi' && random == 6)) {
       message.channel.send("Hoshidian scum! " + emoj_tak);
     }
   }
