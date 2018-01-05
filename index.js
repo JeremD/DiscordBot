@@ -39,7 +39,7 @@ client.on('message', message => { //*
     else if (msgc.includes('ik!kick') || msgc.includes('ik!ban')) {
       message.channel.send("Désolé, je ne peux pas faire ça.");
     }
-    random = Math.floor((Math.random() * 2) + 1);
+    random = Math.floor((Math.random() * 6) + 1);
     else if (msgc.includes('Takumi' && random == 6)) {
       message.channel.send("Hoshidian scum! " + emoj_tak);
     }
