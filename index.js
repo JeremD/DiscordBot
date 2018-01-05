@@ -8,7 +8,8 @@ var id_jyder = '361220724142112780';
 var emoj_tak = '<:nohrianscum:377090236095791104>';
 var emoj_rein = '<:rein:368038551482400788>';
 var userp;
-var ether = 'AETHER';
+var ether = 'AETHER!!!';
+var random = Math.floor((Math.random() * 5) + 1);
 
 //Lancement bot
 client.on('ready', () => {
@@ -23,7 +24,7 @@ client.on('message', message => { //*
   //***********************************************************************//////
   //si l'auteur du message n'est pas un bot
   if (!message.author.bot) {
-    if (msgc == 'ping') { //message contient un ping
+    if (msgc == 'ping' && random == 5) { //message contient un ping
       message.channel.send('pong');
     }
     // else if (msgc.includes('Ike') || msgc.includes('ike')) {
