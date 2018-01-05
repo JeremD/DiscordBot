@@ -9,7 +9,7 @@ var emoj_tak = '<:nohrianscum:377090236095791104>';
 var emoj_rein = '<:rein:368038551482400788>';
 var userp;
 var ether = 'AETHER!!!';
-var random = Math.floor((Math.random() * 1) + 1);
+var random = Math.floor((Math.random() * 2) + 1);
 
 //Lancement bot
 client.on('ready', () => {
@@ -24,7 +24,7 @@ client.on('message', message => { //*
   //***********************************************************************//////
   //si l'auteur du message n'est pas un bot
   if (!message.author.bot) {
-    if (msgc == 'ping' && random == 1) { //message contient un ping
+    if (msgc == 'ping' && random == 2) { //message contient un ping
       message.channel.send('pong');
     }
     // else if (msgc.includes('Ike') || msgc.includes('ike')) {
@@ -36,12 +36,11 @@ client.on('message', message => { //*
     // else if (msgc.includes('cipher') || msgc.includes('Cipher')) {
     //   message.channel.send("J'adore ma SR : ETHER !!!");
     // }
- else if (msgc.includes('ik!kick') || msgc.includes('ik!ban')) {
+    else if (msgc.includes('ik!kick') || msgc.includes('ik!ban')) {
       message.channel.send("Désolé, je ne peux pas faire ça.");
+    } else if (msgc.includes('Takumi')) {
+      message.channel.send("Hoshidian scum! "+emoj_tak);
     }
-    //else if (msgc.includes('Takumi')) {
-    //   message.channel.send("TAAAKKKUUUMMMIII !!! JE T'AAAAIIIIMMMMEEEE " + ':heart_eyes:' + ':heart_eyes:' + ':heart_eyes:');
-    // }
   }
 
 
