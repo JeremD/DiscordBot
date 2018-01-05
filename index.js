@@ -24,7 +24,7 @@ client.on('message', message => { //*
   //***********************************************************************//////
   //si l'auteur du message n'est pas un bot
   if (!message.author.bot) {
-    if (msgc == 'ping' && random == 5) { //message contient un ping
+    if (msgc == 'ping' && random == 2) { //message contient un ping
       message.channel.send('pong');
     }
     // else if (msgc.includes('Ike') || msgc.includes('ike')) {
