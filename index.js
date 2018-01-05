@@ -5,6 +5,7 @@ const token = process.env.BOT_TOKEN;
 var prefix = "ik!";
 var id_bot = "<@382875480451317760>";
 var id_jyder = '361220724142112780';
+var id_takumi = '377090236095791104';
 var emoj_tak = '<:nohrianscum:377090236095791104>';
 var emoj_rein = '<:rein:368038551482400788>';
 var userp;
@@ -41,7 +42,8 @@ client.on('message', message => { //*
     } else if (msgc.includes('Takumi')) {
       random = Math.floor((Math.random() * 6) + 1);
       if (random == 6) {
-        message.channel.send("Hoshidian scum! " + emoj_tak);
+        message.channel.send("Hoshidian scum " + emoj_tak);
+        message.react(id_takumi); //reaction message
       }
 
     }
