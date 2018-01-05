@@ -14,7 +14,7 @@ var random = Math.floor((Math.random() * 5) + 1);
 //Lancement bot
 client.on('ready', () => {
   console.log("Bonjour, je suis Ike. Pour vous servir.");
-  client.user.setGame("Pates of Radiance");
+  client.user.setGame("Pâtes of Radiance");
 });
 
 //action message
