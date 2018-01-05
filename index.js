@@ -16,7 +16,7 @@ var random;
 //Lancement bot
 client.on('ready', () => {
   console.log("Bonjour, je suis Ike. Pour vous servir.");
-  client.user.setGame("Pâtes of Radiance");
+  client.user.setGame("Aether Emblem");
 });
 
 //action message
