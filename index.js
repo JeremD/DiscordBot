@@ -86,6 +86,9 @@ client.on('message', message => { //*
       case 'cute':
         message.channel.send('◕‿◕');
         break;
+      case 'aether':
+        message.channel.send('AETHER !!!');
+        break;
       case 'bear':
         message.channel.send('ʕ ᵔᴥᵔ ʔ');
         break;
