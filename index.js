@@ -103,7 +103,7 @@ client.on('message', message => { //*
         message.channel.send("Eien o chikai shukufuku o sazukeyou \n")
         message.channel.send("Mawari tsuzukeru sadame to shite mo \n")
         message.channel.send("Ima o ikite hoshii\n")
-        message.channel.send("Saa mezame yo\n")
+        message.channel.send("Sa mezame yo\n")
         message.channel.send("Hikari wo ukete\n")
         message.channel.send("Fire Emblem\n")
         message.channel.send("Mamoritai mono ga aru\n")
