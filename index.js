@@ -78,12 +78,12 @@ client.on('message', message => { //*
         message.channel.send('Moi aussi j\'aime les pâtes ♨');
         break;
       case 'rein':
-        message.channel.send('Respect pour Reinhardt ' + emoj_rein);
+        message.channel.send('Magic is everything ' + emoj_rein);
         break;
       case 'takumi':
         message.channel.send('Takumerde ' + emoj_tak);
         break;
-      case 'cute':
+      case 'kawai':
         message.channel.send('◕‿◕');
         break;
       case 'ether':
@@ -91,9 +91,6 @@ client.on('message', message => { //*
         break;
       case 'bear':
         message.channel.send('ʕ ᵔᴥᵔ ʔ');
-        break;
-      case 'fanart':
-        message.channel.send("*NULL*");
         break;
       case 'bk':
         message.channel.send("Le Black Knight et moi sommes les meilleurs amis du monde");
@@ -103,18 +100,18 @@ client.on('message', message => { //*
         break;
       case 'tms':
         message.channel.send("Ah kimi o yobu senritsu wa kono sora no hate e \n")
-          ("Eien o chikai shukufuku o sazukeyou \n")
-          ("Mawari tsuzukeru sadame to shite mo \n")
-          ("Ima o ikite hoshii\n")
-          ("Saa mezame yo\n")
-          ("Hikari wo ukete\n")
-          ("Fire Emblem\n")
-          ("Mamoritai mono ga aru\n")
-          ("Toki o koete mo kawarazu ni\n")
-          ("Fire Emblem (eien o)\n")
-          ("Mamoritai hito ga iru (chikai)\n")
-          ("Ikiru ryu ga (hikari o) soko ni aru\n")
-          ("Sa mezame yo");
+        message.channel.send("Eien o chikai shukufuku o sazukeyou \n")
+        message.channel.send("Mawari tsuzukeru sadame to shite mo \n")
+        message.channel.send("Ima o ikite hoshii\n")
+        message.channel.send("Saa mezame yo\n")
+        message.channel.send("Hikari wo ukete\n")
+        message.channel.send("Fire Emblem\n")
+        message.channel.send("Mamoritai mono ga aru\n")
+        message.channel.send("Toki o koete mo kawarazu ni\n")
+        message.channel.send("Fire Emblem (eien o)\n")
+        message.channel.send("Mamoritai hito ga iru (chikai)\n")
+        message.channel.send("Ikiru ryu ga (hikari o) soko ni aru\n")
+        message.channel.send("Sa mezame yo");
         break;
       default:
         break;
