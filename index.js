@@ -105,10 +105,10 @@ client.on('message', message => { //*
         message.channel.send("Ima o ikite hoshii\n")
         message.channel.send("Sa mezame yo\n")
         message.channel.send("Hikari wo ukete\n")
-        message.channel.send("Fire Emblem\n")
+        message.channel.send("Faia Enbulemu\n")
         message.channel.send("Mamoritai mono ga aru\n")
         message.channel.send("Toki o koete mo kawarazu ni\n")
-        message.channel.send("Fire Emblem (eien o)\n")
+        message.channel.send("Faia Enbulemu (eien o)\n")
         message.channel.send("Mamoritai hito ga iru (chikai)\n")
         message.channel.send("Ikiru ryu ga (hikari o) soko ni aru\n")
         message.channel.send("Sa mezame yo");
