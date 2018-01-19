@@ -102,6 +102,10 @@ client.on('message', message => { //*
       case 'kick':
         message.channel.send("```SyntaxError: Unexpected identifier at createScript (vm.js:80:10)  at Object.runInThisContext (vm.js:152:10) at Module._compile (module.js:605:28)```");
         break;
+      case 'cat':
+        message.channel.send("Miaou");
+        break;
+        break;
       case 'tms':
         message.channel.send("Ah kimi o yobu senritsu wa kono sora no hate e \n")
         message.channel.send("Eien o chikai shukufuku o sazukeyou \n")
