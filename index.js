@@ -105,7 +105,6 @@ client.on('message', message => { //*
       case 'cat':
         message.channel.send("Miaou");
         break;
-        break;
       case 'tms':
         message.channel.send("Ah kimi o yobu senritsu wa kono sora no hate e \n")
         message.channel.send("Eien o chikai shukufuku o sazukeyou \n")
