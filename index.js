@@ -8,6 +8,7 @@ var id_jyder = '361220724142112780';
 var id_takumi = '377090236095791104';
 var id_rein = '368038551482400788';
 var emoj_tak = '<:nohrianscum:377090236095791104>';
+//var emoj_h =
 var emoj_rein = '<:rein:368038551482400788>';
 var userp;
 var ether = 'AETHER!!!';
@@ -91,6 +92,9 @@ client.on('message', message => { //*
         break;
       case 'bear':
         message.channel.send('ʕ ᵔᴥᵔ ʔ');
+        break;
+      case 'godh':
+        message.channel.send('Votez Hector !');
         break;
       case 'bk':
         message.channel.send("Le Black Knight et moi sommes les meilleurs amis du monde");
