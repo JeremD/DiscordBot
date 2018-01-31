@@ -41,9 +41,8 @@ client.on('message', message => { //*
     // }
     else if (msgc.includes('ik!kick') || msgc.includes('ik!ban')) {
       message.channel.send("Désolé, je ne peux pas faire ça.");
-    } else if (msgc.includes('ether') || (msgc.includes('aether')) {
-        message.channel.send('AETHER!!!');
-      }
+    } else if (msgc.includes('ether') || msgc.includes('aether')) {
+      message.channel.send('AETHER!!!');
     }
   }
 
