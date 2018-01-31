@@ -9,7 +9,6 @@ var id_takumi = '377090236095791104';
 var id_rein = '368038551482400788';
 var emoj_tak = '<:nohrianscum:377090236095791104>';
 var cat = ':smiley_cat:'
-//var emoj_h =
 var emoj_rein = '<:rein:368038551482400788>';
 var userp;
 var ether = 'AETHER!!!';
@@ -42,19 +41,10 @@ client.on('message', message => { //*
     // }
     else if (msgc.includes('ik!kick') || msgc.includes('ik!ban')) {
       message.channel.send("Désolé, je ne peux pas faire ça.");
+    } else if (msgc.includes('ether') || (msgc.includes('aether')) {
+        message.channel.send('AETHER!!!');
+      }
     }
-    //message random
-    // else if (msgc.includes('Takumi') || msgc.includes('takumi') || msgc.includes('Reinhardt') || msgc.includes('reinhardt')) {
-    //   random = Math.floor((Math.random() * 6) + 1);
-    //   if (msgc.includes('Takumi') || msgc.includes('takumi') && random == 6) {
-    //     message.channel.send("Hoshidian scum " + emoj_tak + " !");
-    //     message.react(id_takumi); //reaction message
-    //   } else if (msgc.includes('Reinhardt') || msgc.includes('reinhardt') && random == 6) {
-    //     message.channel.send("Magic is everything " + emoj_rein + " !");
-    //     message.react(id_rein); //reaction message
-    //   }
-    //
-    // }
   }
 
 
@@ -87,12 +77,6 @@ client.on('message', message => { //*
         break;
       case 'kawai':
         message.channel.send('◕‿◕');
-        break;
-      case 'ether':
-        message.channel.send('AETHER !!!');
-        break;
-      case 'bear':
-        message.channel.send('ʕ ᵔᴥᵔ ʔ');
         break;
       case 'godh':
         message.channel.send('Votez Hector !');
