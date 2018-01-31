@@ -8,7 +8,7 @@ var id_jyder = '361220724142112780';
 var id_takumi = '377090236095791104';
 var id_rein = '368038551482400788';
 var emoj_tak = '<:nohrianscum:377090236095791104>';
-var cat = '<:smiley_cat>'
+var cat = ':smiley_cat:'
 //var emoj_h =
 var emoj_rein = '<:rein:368038551482400788>';
 var userp;
