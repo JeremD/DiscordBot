@@ -2,10 +2,9 @@ import { Client } from 'discord.js';
 const client = new Client();
 
 const token = process.env.BOT_TOKEN;
-const prefix = "ik!";
-const cat = ':smiley_cat:'
+const prefix = "ik!"; // prefixe du bot
 const emoj_rein = '<:rein:368038551482400788>';
-const userp;
+const userp = msgc.substr(prefix.length);
 
 /** Lancement du bot */
 client.on('ready', () => {
@@ -37,7 +36,6 @@ client.on('message', message => {
 
   // Si mention après le spréfix
   if (msgc.includes(prefix)) {
-    userp = msgc.substr(prefix.length);
 
     switch (userp) {
       case 'cuisine':
@@ -52,18 +50,13 @@ client.on('message', message => {
       case 'kick':
         message.channel.send("```SyntaxError: Unexpected identifier at createScript (vm.js:80:10)  at Object.runInThisContext (vm.js:152:10) at Module._compile (module.js:605:28)```");
         break;
-      case 'cat':
-        message.channel.send("Miaou " + cat);
-        break;
       case 'bonjour' || 'salut':
         message.channel.send("Bonjour je suis Ike, mercenaire de Greil, pour vous servir");
         break;
       default:
         break;
     }
-
   }
-
 });
 
 /** Token */
