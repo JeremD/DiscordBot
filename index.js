@@ -1,5 +1,5 @@
-const Discord = require('discord.js');
-const client = new Discord.Client();
+import { Client } from 'discord.js';
+const client = new Client();
 
 const token = process.env.BOT_TOKEN;
 const prefix = "ik!";
@@ -16,26 +16,26 @@ client.on('ready', () => {
 /** Action des messages */
 client.on('message', message => {
 
-  const msgc = message.content; //raccourci
+  const msgc = message.content; // raccourci
   const random = Math.floor((Math.random() * 2) + 1);
 
-  //si l'auteur du message n'est pas un bot
+  // Si l'auteur du message n'est pas un bot
   if (!message.author.bot) {
-    if (msgc == 'ping' && random == 2) { //message contient un ping
+    if (msgc == 'ping' && random == 2) { // message contient un ping
       message.channel.send('pong');
-    } else if (msgc.includes('Pain au chocolat') || msgc.includes('pain au chocolat') || msgc.includes('Chocolatine') || msgc.includes('chocolatine')) {
+    } else if (msgc.includes('Pain au chocolat') || msgc.includes('pain au chocolat')) {
       message.channel.send('Chocolatine !');
     }
   }
 
-  //Si l'auteur est un bot
+  // Si l'auteur est un bot
   if (message.author.bot) {
     if (msgc.includes("T'AS DIT QUOI LÀ")) {
       message.channel.send("**OMAE WA MOU SHINDEIRU " + emoj_rein + ' !!!**');
     }
   }
 
-  //si mention après le spréfix
+  // Si mention après le spréfix
   if (msgc.includes(prefix)) {
     userp = msgc.substr(prefix.length);
 
