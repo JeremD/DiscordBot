@@ -36,7 +36,6 @@ client.on('message', message => {
 
   // Si mention après le spréfix
   if (msgc.includes(prefix)) {
-
     switch (userp) {
       case 'cuisine':
         message.channel.send('J\'aime les chocolatines ♨');
