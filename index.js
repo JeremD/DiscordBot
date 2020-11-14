@@ -1,6 +1,6 @@
 import { Client } from 'discord.js';
-const client = new Client();
 
+const client = new Client();
 const token = process.env.BOT_TOKEN;
 const prefix = "ik!"; // prefixe du bot
 const emoj_rein = '<:rein:368038551482400788>';
