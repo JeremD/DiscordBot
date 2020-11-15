@@ -38,19 +38,10 @@ client.on('message', message => {
   // Si mention après le spréfix
   if (msgc.includes(prefix)) {
     switch (userp) {
-      case 'cuisine':
-        message.channel.send('J\'aime les chocolatines ♨');
-        break;
-      case 'kawai':
+      case 'kawai' || 'cute':
         message.channel.send('◕‿◕');
         break;
-      case 'bk':
-        message.channel.send("Le Black Knight et moi sommes les meilleurs amis du monde");
-        break;
-      case 'kick':
-        message.channel.send("```SyntaxError: Unexpected identifier at createScript (vm.js:80:10)  at Object.runInThisContext (vm.js:152:10) at Module._compile (module.js:605:28)```");
-        break;
-      case 'bonjour' || 'salut':
+      case 'bonjour' || 'salut' || 'hello' | 'hi':
         message.channel.send("Bonjour je suis Ike, mercenaire de Greil, pour vous servir");
         break;
       default:
