@@ -1,4 +1,5 @@
 import { Client } from 'discord.js';
+require('dotenv').config();
 
 const client = new Client();
 const token = process.env.BOT_TOKEN;
